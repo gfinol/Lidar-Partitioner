@@ -116,11 +116,12 @@ def run(partition_size, in_las_data, point_count, m_out_views):
 
 
 def create_partitions(file_name, out_dir, partition_size=None, buffer_size=None):
-    print('Start partitioning')
+    print('Start partitioning...')
     in_las_data, point_count, m_out_views = init(file_name)
     partitions_indexes = run(partition_size, in_las_data, point_count, m_out_views)
-
+    print('Partitions computed, adding buffer and saving to disc...')
     write_part(in_las_data, file_name, out_dir, partitions_indexes, buffer_size)
+    print('Partitions have been written.')
 
 
 def write_part(in_file, origfname, out_dir, partitions, buffer):
