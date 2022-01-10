@@ -2,7 +2,7 @@
 Lidar-Partitioner is a novel tool that enables the partitioning of lidar data by dividing it into several chunks with 
 somewhat the same sizes.
 
-This repository contains the code and instructions for the LidarPartitioner tool. This tool is a results from the 
+This repository contains the code and instructions for the LidarPartitioner tool. This tool is a result from the 
 [CloudButton](https://cloudbutton.eu/) project. The main functionality of the tool is the correct partitioning of LiDAR 
 files for LAS and LAZ formats. 
 LidarPartitioner takes care of:
