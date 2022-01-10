@@ -37,7 +37,7 @@ chunks of approximately **30,000 points**, using a **buffer distance of 5** and 
 python -m lidarpartitioner -f "data/lasfile.las" -o "partitions" -p 30000 -b 5
 ```
 
-### Using LidarPartitioner on a python program
+### Using LidarPartitioner in a python program
 
 ```python
 from lidarpartitioner import create_partitions
